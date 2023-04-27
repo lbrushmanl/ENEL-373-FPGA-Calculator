@@ -1,0 +1,315 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Mar 17 11:47:11 2022
+# Process ID: 16260
+# Current directory: H:/Documents/FPGA/7-SEG/7-SEG.runs/synth_1
+# Command line: vivado.exe -log Seg_Display.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Seg_Display.tcl
+# Log file: H:/Documents/FPGA/7-SEG/7-SEG.runs/synth_1/Seg_Display.vds
+# Journal file: H:/Documents/FPGA/7-SEG/7-SEG.runs/synth_1\vivado.jou
+# Running On: ELECTRO-03, OS: Windows, CPU Frequency: 3408 MHz, CPU Physical cores: 4, Host memory: 8464 MB
+#-----------------------------------------------------------
+source Seg_Display.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1247.543 ; gain = 23.918
+Command: read_checkpoint -auto_incremental -incremental H:/Documents/FPGA/7-SEG/7-SEG.srcs/utils_1/imports/synth_1/Seg_Display.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from H:/Documents/FPGA/7-SEG/7-SEG.srcs/utils_1/imports/synth_1/Seg_Display.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top Seg_Display -part xc7a100tcsg324-3
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-3
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 14084
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1247.543 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Seg_Display' [H:/Documents/FPGA/7-SEG/7-SEG.srcs/sources_1/new/Seg_Display.vhd:42]
+INFO: [Synth 8-638] synthesizing module 'clk_divider' [H:/Documents/FPGA/narottams_clk_divider.vhd:13]
+	Parameter FREQ_OUT bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider' (1#1) [H:/Documents/FPGA/narottams_clk_divider.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'clk_divider__parameterized0' [H:/Documents/FPGA/narottams_clk_divider.vhd:13]
+	Parameter FREQ_OUT bound to: 100 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'clk_divider__parameterized0' (1#1) [H:/Documents/FPGA/narottams_clk_divider.vhd:13]
+INFO: [Synth 8-638] synthesizing module 'counter' [H:/Documents/FPGA/counter_with_overflow.vhd:12]
+INFO: [Synth 8-256] done synthesizing module 'counter' (2#1) [H:/Documents/FPGA/counter_with_overflow.vhd:12]
+INFO: [Synth 8-638] synthesizing module 'BCD_to_7SEG' [H:/Documents/FPGA/BCD_to_7SEG.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'BCD_to_7SEG' (3#1) [H:/Documents/FPGA/BCD_to_7SEG.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'Seg_Display' (4#1) [H:/Documents/FPGA/7-SEG/7-SEG.srcs/sources_1/new/Seg_Display.vhd:42]
+WARNING: [Synth 8-7129] Port LED[15] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[14] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[13] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[12] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[11] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[10] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[9] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[8] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[7] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[6] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[5] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[4] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[3] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[2] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[1] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[3] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[2] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[1] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[0] in module Seg_Display is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1247.543 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1247.543 ; gain = 0.000
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:09 . Memory (MB): peak = 1247.543 ; gain = 0.000
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1247.543 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [H:/Documents/FPGA/Nexys4DDR_Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'SW[4]'. [H:/Documents/FPGA/Nexys4DDR_Master.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Documents/FPGA/Nexys4DDR_Master.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[5]'. [H:/Documents/FPGA/Nexys4DDR_Master.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Documents/FPGA/Nexys4DDR_Master.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[6]'. [H:/Documents/FPGA/Nexys4DDR_Master.xdc:19]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Documents/FPGA/Nexys4DDR_Master.xdc:19]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[7]'. [H:/Documents/FPGA/Nexys4DDR_Master.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Documents/FPGA/Nexys4DDR_Master.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[8]'. [H:/Documents/FPGA/Nexys4DDR_Master.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Documents/FPGA/Nexys4DDR_Master.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[9]'. [H:/Documents/FPGA/Nexys4DDR_Master.xdc:22]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Documents/FPGA/Nexys4DDR_Master.xdc:22]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[10]'. [H:/Documents/FPGA/Nexys4DDR_Master.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Documents/FPGA/Nexys4DDR_Master.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'SW[11]'. [H:/Documents/FPGA/Nexys4DDR_Master.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [H:/Documents/FPGA/Nexys4DDR_Master.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [H:/Documents/FPGA/Nexys4DDR_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [H:/Documents/FPGA/Nexys4DDR_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Seg_Display_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Seg_Display_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1266.750 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1266.750 ; gain = 0.000
+WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1266.750 ; gain = 19.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-3
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1266.750 ; gain = 19.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 1266.750 ; gain = 19.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 1266.750 ; gain = 19.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   27 Bit       Adders := 1     
+	   2 Input   20 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
++---Registers : 
+	               27 Bit    Registers := 1     
+	               20 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input   27 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design Seg_Display has port AN[7] driven by constant 1
+WARNING: [Synth 8-3917] design Seg_Display has port AN[6] driven by constant 1
+WARNING: [Synth 8-3917] design Seg_Display has port AN[5] driven by constant 1
+WARNING: [Synth 8-3917] design Seg_Display has port AN[4] driven by constant 1
+WARNING: [Synth 8-3917] design Seg_Display has port AN[3] driven by constant 1
+WARNING: [Synth 8-3917] design Seg_Display has port AN[2] driven by constant 1
+WARNING: [Synth 8-7129] Port LED[15] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[14] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[13] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[12] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[11] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[10] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[9] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[8] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[7] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[6] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[5] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[4] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[3] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[2] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port LED[1] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[3] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[2] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[1] in module Seg_Display is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SW[0] in module Seg_Display is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:23 . Memory (MB): peak = 1266.750 ; gain = 19.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1266.750 ; gain = 19.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1266.750 ; gain = 19.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:29 . Memory (MB): peak = 1266.750 ; gain = 19.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1266.750 ; gain = 19.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1266.750 ; gain = 19.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1266.750 ; gain = 19.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1266.750 ; gain = 19.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1266.750 ; gain = 19.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1266.750 ; gain = 19.207
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    12|
+|3     |LUT1   |     5|
+|4     |LUT2   |     2|
+|5     |LUT3   |     4|
+|6     |LUT4   |    16|
+|7     |LUT5   |     3|
+|8     |LUT6   |    13|
+|9     |FDRE   |    58|
+|10    |IBUF   |     1|
+|11    |OBUF   |    16|
+|12    |OBUFT  |    15|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1266.750 ; gain = 19.207
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 26 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:32 . Memory (MB): peak = 1266.750 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 1266.750 ; gain = 19.207
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1266.750 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1270.875 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: dfdcc28d
+INFO: [Common 17-83] Releasing license: Synthesis
+29 Infos, 55 Warnings, 8 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:46 . Memory (MB): peak = 1270.875 ; gain = 23.332
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint 'H:/Documents/FPGA/7-SEG/7-SEG.runs/synth_1/Seg_Display.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Seg_Display_utilization_synth.rpt -pb Seg_Display_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Mar 17 11:48:07 2022...

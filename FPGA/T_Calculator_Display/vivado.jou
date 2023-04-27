@@ -1,0 +1,50 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Mar 22 14:03:16 2022
+# Process ID: 9788
+# Current directory: H:/Documents/ENEL373/milestone_one/373-fpg-calculator/FPGA/T_Calculator_Display
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13340 H:\Documents\ENEL373\milestone_one\373-fpg-calculator\FPGA\T_Calculator_Display\T_Calculator_Display.xpr
+# Log file: H:/Documents/ENEL373/milestone_one/373-fpg-calculator/FPGA/T_Calculator_Display/vivado.log
+# Journal file: H:/Documents/ENEL373/milestone_one/373-fpg-calculator/FPGA/T_Calculator_Display\vivado.jou
+# Running On: CAE-44, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 4, Host memory: 17049 MB
+#-----------------------------------------------------------
+start_gui
+open_project H:/Documents/ENEL373/milestone_one/373-fpg-calculator/FPGA/T_Calculator_Display/T_Calculator_Display.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+set_param general.maxThreads 6
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+refresh_design
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+refresh_design
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1

@@ -1,0 +1,11 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+W:/Documents/373-fpg-calculator/FPGA/T_Calculator_Display/T_Calculator_Display.srcs/sim_1/new/displayTest.vhd,1647755505,vhdl,,,,displaytest,,,,,,,,
+W:/Documents/373-fpg-calculator/FPGA/T_Calculator_Display/T_Calculator_Display.srcs/sources_1/imports/FPGA/BCD_to_7SEG.vhd,1647730832,vhdl,W:/Documents/373-fpg-calculator/FPGA/T_Calculator_Display/T_Calculator_Display.srcs/sources_1/new/T_Calculator_Display.vhd,,,bcd_to_7seg,,,,,,,,
+W:/Documents/373-fpg-calculator/FPGA/T_Calculator_Display/T_Calculator_Display.srcs/sources_1/imports/FPGA/bin_to_bcd.vhd,1647730832,vhdl,W:/Documents/373-fpg-calculator/FPGA/T_Calculator_Display/T_Calculator_Display.srcs/sources_1/new/T_Calculator_Display.vhd,,,bin_to_bcd,,,,,,,,
+W:/Documents/373-fpg-calculator/FPGA/T_Calculator_Display/T_Calculator_Display.srcs/sources_1/imports/FPGA/narottams_clk_divider.vhd,1647730832,vhdl,W:/Documents/373-fpg-calculator/FPGA/T_Calculator_Display/T_Calculator_Display.srcs/sources_1/new/T_Calculator_Display.vhd,,,clk_divider,,,,,,,,
+W:/Documents/373-fpg-calculator/FPGA/T_Calculator_Display/T_Calculator_Display.srcs/sources_1/new/Ring_Counter.vhd,1647737375,vhdl,W:/Documents/373-fpg-calculator/FPGA/T_Calculator_Display/T_Calculator_Display.srcs/sources_1/new/T_Calculator_Display.vhd,,,ring_counter,,,,,,,,
+W:/Documents/373-fpg-calculator/FPGA/T_Calculator_Display/T_Calculator_Display.srcs/sources_1/new/T_Calculator_Display.vhd,1647737934,vhdl,,,,t_calculator_display,,,,,,,,
+W:/Documents/373-fpg-calculator/FPGA/bcd_blanker.vhd,1647730832,vhdl,W:/Documents/373-fpg-calculator/FPGA/T_Calculator_Display/T_Calculator_Display.srcs/sources_1/imports/FPGA/bin_to_bcd.vhd,,,bcd_blanker,,,,,,,,

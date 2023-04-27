@@ -1,0 +1,12 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../T_Calculator_Display.srcs/sources_1/imports/FPGA/BCD_to_7SEG.vhd" \
+"../../../../T_Calculator_Display.srcs/sources_1/new/Ring_Counter.vhd" \
+"../../../../../bcd_blanker.vhd" \
+"../../../../T_Calculator_Display.srcs/sources_1/imports/FPGA/bin_to_bcd.vhd" \
+"../../../../T_Calculator_Display.srcs/sources_1/imports/FPGA/narottams_clk_divider.vhd" \
+"../../../../T_Calculator_Display.srcs/sources_1/new/T_Calculator_Display.vhd" \
+"../../../../T_Calculator_Display.srcs/sim_1/new/displayTest.vhd" \
+
+# Do not sort compile order
+nosort

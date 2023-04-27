@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Mar 22 15:37:31 2022
+# Process ID: 3384
+# Current directory: H:/Documents/ENEL373/milestone_one/373-fpg-calculator/FPGA/T_Calculator_Display/T_Calculator_Display.runs/impl_1
+# Command line: vivado.exe -log T_Calculator_Display.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source T_Calculator_Display.tcl -notrace
+# Log file: H:/Documents/ENEL373/milestone_one/373-fpg-calculator/FPGA/T_Calculator_Display/T_Calculator_Display.runs/impl_1/T_Calculator_Display.vdi
+# Journal file: H:/Documents/ENEL373/milestone_one/373-fpg-calculator/FPGA/T_Calculator_Display/T_Calculator_Display.runs/impl_1\vivado.jou
+# Running On: CAE-44, OS: Windows, CPU Frequency: 3600 MHz, CPU Physical cores: 4, Host memory: 17049 MB
+#-----------------------------------------------------------
+source T_Calculator_Display.tcl -notrace
